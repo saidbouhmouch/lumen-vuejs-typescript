@@ -1,12 +1,12 @@
 import Vue from 'vue';
-import Welcome from './welcome.component';
-
+import AppPage from './app.vue'
+import router from './route'
 new Vue({
   el: '#app',
-  name:"welcome",
+  name:"app",
   components: {
-    Welcome
+    AppPage
   },
-  template: '<Welcome/>'
+  router,
 });
 

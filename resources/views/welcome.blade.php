@@ -10,6 +10,7 @@
    <body>
       
       <div id="app" class="page-container">
+         <app-page></app-page>
       </div>
       <script defer src="/js/main.js"></script>
    </body>

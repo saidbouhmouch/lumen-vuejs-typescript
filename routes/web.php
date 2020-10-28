@@ -13,6 +13,6 @@
 |
 */
 
-$router->get('/', function () use ($router) {
+$router->get('/{any:.*}/', function () use ($router) {
     return view('welcome');
 });

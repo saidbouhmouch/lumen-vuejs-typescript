@@ -1,17 +1,28 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "baseUrl": ".",
+        "sourceMap": true,
         "strict": true,
-        "module": "esnext",
-        "moduleResolution": "node",
+        "noImplicitReturns": true,      
         "experimentalDecorators": true,
-        "lib": [
-            "es2018",
-            "dom"
-          ]
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "module": "es2020",
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": ["dom", "es5", "es2020"],
+        "emitDecoratorMetadata": true,
+        "allowJs": true
     },
     "include": [
-        "resources/assets/**/*"
+        "resources/assets/**/*.ts",
+        "resources/assets/**/*.vue",
+        "resources/assets/**/*.html"
     ],
-    "exclude": []
+    "files": [
+        "resources/assets/vue-shim.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
